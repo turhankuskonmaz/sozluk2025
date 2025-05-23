@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Sözlük</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Basit HTML Sözlük</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Kelime veya anlamda ara...">
+        </div>
+
+        <div id="errorDisplay" class="error-message" style="display:none;"></div>
+
+        <table id="dictionaryTable">
+            <thead>
+                <tr>
+                    <th>KELİME</th>
+                    <th>ANLAM</th>
+                </tr>
+            </thead>
+            <tbody id="dictionaryBody">
+                <!-- Sözlük girdileri buraya JavaScript ile eklenecek -->
+            </tbody>
+        </table>
+        <p id="noResultsMessage" style="display:none; text-align:center; margin-top:15px; color:#777;">
+            Arama kriterlerinize uygun sonuç bulunamadı.
+        </p>
+         <p id="loadingMessage" style="text-align:center; margin-top:15px; color:#777;">
+            Sözlük verileri yükleniyor...
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
